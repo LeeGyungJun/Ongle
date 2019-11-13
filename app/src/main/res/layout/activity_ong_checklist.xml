@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/che"
+    android:visibility="visible"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="체크리스트"
+            android:textSize="28dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ceToc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center">
+
+            <EditText
+                android:gravity="bottom"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:hint="내용을 입력해주세요"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/check_edit"
+                />
+
+
+            <Button android:layout_height="30dp"
+                android:layout_width="60dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+                android:id="@+id/add_check"
+                android:text="@string/add_button_text"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="top"/>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/check_list"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#48bcef</color>
+    <color name="colorAccent">#48bcef</color>
+    <color name="pink">#FDAB98</color>
+    <color name="main">#bde0f9</color>
+    <color name="main2">#7f7f7f</color>
+    <color name="main3">#CCE8F3FF</color>
+    <color name="mailbox">#ffffff</color>
+    <color name="titleText">#444444</color>
+    <color name="normText">#7f7f7f</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#1f1f1f</color>
+    <color name="sun">#3e2d2d</color>
+    <color name="fir">#48bcef</color>
+    <color name="sen">#7ED0F3</color>
+    <color name="thi">#A4DEF6</color>
+    <color name="line">#a9a9a9</color>
+    <color name="settingLine">#c2c2c2</color>
+    <color name="back">#CCE8F3FF</color>
+    <color name="invisible">#00000000</color>
+    <color name="setting">#00ff0000</color>
+</resources>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:id="@+id/toolbar"
+        android:paddingLeft="7dp"
+        android:layout_margin="2dp">
+
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/home"
+            android:focusableInTouchMode="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:layout_margin="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo_b"/>
+
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:layout_margin="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+
+
+
+
+    <TextView
+        android:paddingTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="개인 정보 관리"
+        android:textSize="28dp"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:columnCount="6"
+        android:rowCount="8">
+        <!--타이틀-->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="ID"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="PW"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="PW확인"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            android:layout_marginBottom="5dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="닉네임"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="생년월일"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="직업군"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:text="관심사항"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="viewEnd"
+            android:textSize="17dp"
+            tools:ignore="RtlCompat" />
+
+        <!--editText-->
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_columnSpan="4"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/border_" />
+
+
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/border_" />
+
+        <EditText
+            android:id="@+id/chePw"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="PW를 동일하게 입력하세요"
+            android:textAlignment="center"
+            android:background="@drawable/border_" />
+
+        <EditText
+            android:id="@+id/nickN"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_" />
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_" />
+
+        <Spinner
+            android:id="@+id/spinner_month"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_" />
+
+        <Spinner
+            android:id="@+id/spinner_day"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_" />
+
+        <Spinner
+            android:id="@+id/spinner_job"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_" />
+
+        <LinearLayout
+            android:background="@drawable/che_area"
+            android:layout_width="210dp"
+            android:layout_height="150dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_columnSpan="4"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="5dp">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                >
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동물" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="독서" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="산책" />
+                </TableRow>
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="바캉스" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="건강" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="요리" />
+                </TableRow>
+                <TableRow>
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="꽃" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="운동"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/checkBox9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="환경" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+
+
+
+
+    </GridLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보수정"
+            android:id="@+id/btn_finish"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/btn_ce"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/container">
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title_o"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            />
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/logo_b"
+            android:layout_gravity="center"
+            android:id="@+id/baseLogo"/>
+
+
+        <!--아이디 비밀번호 입력-->
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/idText"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="@drawable/border_"
+                android:textSize="15dp"
+                android:hint="ID를 입력하세요"/>
+
+            <EditText
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/passText"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:background="@drawable/border_"
+                android:hint="PW를 입력하세요"/>
+
+            <!--버튼-->
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:text="로그인"
+                android:id="@+id/loginBtn"
+                android:background="#CCE8F3FF"
+
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="회원가입"/>
+                <Button
+                    android:id="@+id/findBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="ID/PW 찾기"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

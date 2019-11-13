@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ong</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="add_button_text" translatable="false">추가</string>
+    <string name="title_activity_ong_calendar">OngCalendar</string>
+    <string name="title_activity_ong_checklist">OngChecklist</string>
+    <string name="title_activity_ong_map">OngMap</string>
+    <string name="title_activity_ong_setting">OngSetting</string>
+    <string name="title_activity_ong_alert">OngAlert</string>
+</resources>

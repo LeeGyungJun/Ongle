@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--툴바-->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:id="@+id/toolbar"
+        android:paddingLeft="7dp"
+        android:layout_margin="2dp">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:layout_margin="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo_b"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:layout_margin="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_below="@+id/toolbar"/>
+
+
+
+
+    <!--contentcase-->
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.Ongle.ong.user.OngFindUser">
+
+        <!--content-->
+        <LinearLayout
+            android:id="@+id/con"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:paddingTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="ID/PW 찾기"
+            android:textSize="28dp"/>
+
+
+
+            <CheckBox
+                android:id="@+id/findId"
+                android:text="id 찾기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <CheckBox
+                android:id="@+id/findPw"
+                android:text="pw 찾기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <!--find-->
+            <LinearLayout
+                android:id="@+id/findLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/back">
+                <GridLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="6"
+                    android:rowCount="3">
+
+                    <!--findPw-->
+                    <TextView
+                        android:id="@+id/idTextView"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:text="ID"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="17dp"
+                        tools:ignore="RtlCompat" />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:text="닉네임"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="17dp"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:layout_margin="5dp"
+                        android:text="생년월일"
+                        android:layout_marginBottom="5dp"
+                        android:textAlignment="viewEnd"
+                        android:textSize="17dp"
+                        tools:ignore="RtlCompat" />
+
+                    <!--ID-->
+                    <EditText
+                        android:id="@+id/id"
+                        android:layout_width="210dp"
+                        android:layout_height="35dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_columnSpan="5"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border_" />
+
+                    <!--닉네임-->
+                    <EditText
+                        android:id="@+id/nick"
+                        android:layout_width="210dp"
+                        android:layout_height="35dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_columnSpan="5"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border_" />
+                    <!--생년월일-->
+                    <Spinner
+                        android:id="@+id/spinner_year"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border_" />
+
+                    <Spinner
+                        android:id="@+id/spinner_month"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_row="2"
+                        android:layout_column="3"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border_" />
+
+                    <Spinner
+                        android:id="@+id/spinner_day"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_row="2"
+                        android:layout_column="4"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/border_" />
+
+                </GridLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_find"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="찾기"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

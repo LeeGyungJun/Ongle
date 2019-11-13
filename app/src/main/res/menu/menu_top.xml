@@ -1,0 +1,23 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/logo_b"
+        app:showAsAction="always"
+        android:gravity="center"/>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="환경설정"
+        android:icon="@drawable/settings"
+        app:showAsAction="always"/>
+
+    <!-- Settings, should always be in the overflow -->
+
+
+</menu>

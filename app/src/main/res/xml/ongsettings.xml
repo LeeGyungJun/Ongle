@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="옹글 환경설정"
+        >
+
+        <SwitchPreference
+            android:key="message"
+            android:title="팝업 알람"/>
+
+        <SwitchPreference
+            android:key="keyword_screen"
+            android:title="추천일정 알람"/>
+
+        <SwitchPreference
+            android:key="keyword_screen"
+            android:title="반복일정 알람"/>
+
+        <ListPreference
+            android:entries="@array/array_voice"
+            android:entryValues="@array/array_voice"
+            android:key="sound_list"
+            android:summary="알림음"
+            android:title="알림음 설정" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

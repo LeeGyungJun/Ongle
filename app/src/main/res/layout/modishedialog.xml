@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    >
+
+
+
+    <EditText
+        android:id="@+id/modiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint=" :-ㅇ"
+        android:textAlignment="center"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/modiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/alarmV"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/alarm"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/alal"
+            android:padding="5dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="알람 설정"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/alarmt"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="[없음]"
+            android:textSize="17dp"
+            android:gravity="right"
+        />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/ceckview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="일정 정보 보기  ▽"/>
+        <GridLayout
+            android:layout_gravity="center"
+            android:id="@+id/Grid"
+            android:layout_margin="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calen"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="시작"
+                android:textSize="17dp" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="종료"
+                android:textSize="17dp" />
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/end"
+                android:layout_gravity="fill"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/replay"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/replayt"
+                android:paddingLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="[없음]"
+                android:textSize="17dp"
+                android:layout_gravity="start"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+</RelativeLayout>

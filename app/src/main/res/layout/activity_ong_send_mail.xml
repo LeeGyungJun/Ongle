@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:id="@+id/toolbar"
+        android:layout_margin="2dp">
+
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/home"
+            android:focusableInTouchMode="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:layout_margin="2dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logo_b"/>
+
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:focusableInTouchMode="true"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:layout_margin="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="옹글 어플을 이용해 주셔서 감사합니다."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의 사항이 있으신 경우 \n 아래의 양식에 작성하여 보내주시면 \n 작성한 이메일 주소로 답변이 전송됩니다."
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="제  목"
+            android:textSize="17dp"
+            />
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_"
+            android:id="@+id/sendmail_Title"
+            android:textSize="15dp"
+            android:hint="  제목을 입력해주세요."
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="문의 내용"
+            android:textSize="17dp" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:background="@drawable/che_area"
+            android:layout_marginBottom="10dp"
+            android:hint="내용을 입력해주세요."
+            android:id="@+id/sendmail_Content"
+            android:gravity="center"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="이메일"
+            android:textSize="17dp"
+            android:layout_marginBottom="15dp"/>
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/border_"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/sendmail_Email"
+            android:hint="  답변 받을 이메일을 입력해주세요."
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="전 송"
+            android:layout_margin="5dp"
+            android:id="@+id/send"
+            android:textSize="15dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="다시쓰기"
+            android:layout_margin="5dp"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>
