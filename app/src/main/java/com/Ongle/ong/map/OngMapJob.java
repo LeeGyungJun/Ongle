@@ -116,7 +116,7 @@ public class OngMapJob extends JobService {
 
             Calendar calendar = Calendar.getInstance();
             calendar.set(calendar.HOUR_OF_DAY,16);
-            calendar.set(calendar.MINUTE,20);
+            calendar.set(calendar.MINUTE,1);
             calendar.set(calendar.SECOND,50);
             long startUpTime = calendar.getTimeInMillis();
             if (System.currentTimeMillis() > startUpTime) {
@@ -133,9 +133,9 @@ public class OngMapJob extends JobService {
             PendingIntent sender = PendingIntent.getBroadcast(OngMapJob.this, 0, intent, 0);
 
             Calendar calendar = Calendar.getInstance();
-            calendar.set(calendar.HOUR_OF_DAY,10);
-            calendar.set(calendar.MINUTE,55);
-            calendar.set(calendar.SECOND,10);
+            calendar.set(calendar.HOUR_OF_DAY,16);
+            calendar.set(calendar.MINUTE,22);
+            calendar.set(calendar.SECOND,30);
             long startUpTime = calendar.getTimeInMillis();
             if (System.currentTimeMillis() > startUpTime) {
                 startUpTime = startUpTime + 24*60*60*1000;

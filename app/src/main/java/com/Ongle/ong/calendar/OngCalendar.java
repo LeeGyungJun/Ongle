@@ -904,6 +904,7 @@ public class OngCalendar extends Fragment  {
         if(annymont==5 && anniday ==5){ anni = "어린이날";}
         if(annymont==3 && anniday ==1){ anni = "삼일절";}
         if(annymont==1 && anniday ==1){ anni = "신정";}
+        if(annymont==11 && anniday ==21){ anni = "시상식";}
         return anni;
     }
 

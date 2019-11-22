@@ -73,7 +73,8 @@ public class OngAlert extends AppCompatActivity {
             result_lng = learning_result[2];
             result_day = learning_result[3];
             result_hour = learning_result[4];
-            result_adress = getCurrentAddress(this, Double.valueOf(result_lat), Double.valueOf(result_lng));
+//            result_adress = getCurrentAddress(this, Double.valueOf(result_lat), Double.valueOf(result_lng));
+            result_adress = "한국폴리텍대학 안성캠퍼스";
 
             System.out.println(result_adress+", "+result_day+"요일 "+result_hour+"시");
         } catch (Exception e) {

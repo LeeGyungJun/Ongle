@@ -9,6 +9,7 @@ import android.annotation.TargetApi;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.Ongle.ong.map.OngMapJob;
 import com.example.ong.R;
 import com.Ongle.ong.calendar.AlarmReceiver;
 import com.Ongle.ong.calendar.OngCalendar;
@@ -38,13 +40,14 @@ public class OngMain extends AppCompatActivity  {
     private FragmentTransaction transaction;
     private Thread backgroundThread;
     private long time= 0;
-
+//    private OngMapJob.HelperMap dbHelper = new OngMapJob.HelperMap(this, "GPS.db", null, 1);
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ong_main);
+//        dbHelper.delete();
 
 
         //setting
